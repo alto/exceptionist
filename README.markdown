@@ -2,11 +2,11 @@
 
 Want to force your `Rails 3` application to respond with a certain HTTP status code? Just call
 
-    /fire/500
+    http://my.app.com/fire/500
     
 to let the application crash, or call
     
-    /fire/412
+    http://my.app.com/fire/412
     
 for a nice'n'nifty *precondition failed*.
 
@@ -18,9 +18,12 @@ Simply install via
     
 or when using [Bundler](http://gembundler.com/), add the line
 
-    $ gem 'exceptionist'
+    # Gemfile
+    gem 'exceptionist'
   
-to your Gemfile.
+to your Gemfile and call
+
+    $ bundle install
   
 ---
 
