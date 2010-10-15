@@ -4,7 +4,7 @@ Want to force your Rails 3 application to respond with a certain HTTP status cod
 
     /fire/500
     
-or
+to the application crash, or call
     
     /fire/412
     
