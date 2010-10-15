@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["alto"]
   s.date = %q{2010-10-15}
-  s.description = %q{Ask Rails application to crash}
+  s.description = %q{Request a certain HTTP status code to be returned}
   s.email = %q{boettger@mt7.de}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Ask Rails application to crash}
+  s.summary = %q{Force your Rails 3 application to crash}
   s.test_files = [
     "test/fire_controller_test.rb",
      "test/helper.rb"
