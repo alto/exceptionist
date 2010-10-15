@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{exceptionist}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["alto"]
@@ -14,13 +14,13 @@ Gem::Specification.new do |s|
   s.email = %q{boettger@mt7.de}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+     "README.markdown"
   ]
   s.files = [
     ".document",
      ".gitignore",
      "LICENSE",
-     "README.rdoc",
+     "README.markdown",
      "Rakefile",
      "VERSION",
      "app/controllers/exceptionist/fire_controller.rb",
@@ -28,8 +28,8 @@ Gem::Specification.new do |s|
      "exceptionist.gemspec",
      "lib/exceptionist.rb",
      "lib/exceptionist/engine.rb",
-     "test/helper.rb",
-     "test/test_exceptionist.rb"
+     "test/fire_controller_test.rb",
+     "test/helper.rb"
   ]
   s.homepage = %q{http://github.com/alto/exceptionist}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -37,8 +37,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Ask Rails application to crash}
   s.test_files = [
-    "test/helper.rb",
-     "test/test_exceptionist.rb"
+    "test/fire_controller_test.rb",
+     "test/helper.rb"
   ]
 
   if s.respond_to? :specification_version then
