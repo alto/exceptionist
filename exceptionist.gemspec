@@ -23,8 +23,11 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "app/controllers/exceptionist/fire_controller.rb",
      "config/routes.rb",
+     "exceptionist.gemspec",
      "lib/exceptionist.rb",
+     "lib/exceptionist/engine.rb",
      "test/helper.rb",
      "test/test_exceptionist.rb"
   ]
