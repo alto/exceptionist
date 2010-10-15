@@ -1,10 +1,10 @@
 # Exceptionist - Force your application to crash #
 
-Want to force your Rails 3 application to respond with a certain HTTP status code? Just call
+Want to force your `Rails 3` application to respond with a certain HTTP status code? Just call
 
     /fire/500
     
-to the application crash, or call
+to let the application crash, or call
     
     /fire/412
     
@@ -14,14 +14,15 @@ for a nice'n'nifty *precondition failed*.
 
 Simply install via
 
-    gem install exceptionist
+    $ gem install exceptionist
     
 or when using [Bundler](http://gembundler.com/), add the line
 
-    gem 'exceptionist'
+    $ gem 'exceptionist'
   
 to your Gemfile.
   
+---
 
 ## Note on Patches/Pull Requests ##
  
