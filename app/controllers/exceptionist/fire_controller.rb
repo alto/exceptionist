@@ -1,6 +1,6 @@
 module Exceptionist
 
-  class FireController < ApplicationController
+  class FireController < ActionController::Base
     
     def fire
       case params[:http_status_code].to_i
