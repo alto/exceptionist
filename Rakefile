@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "exceptionist"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Ask Rails application to crash}
+    gem.description = %Q{Ask Rails application to crash}
     gem.email = "boettger@mt7.de"
     gem.homepage = "http://github.com/alto/exceptionist"
     gem.authors = ["alto"]
