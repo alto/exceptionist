@@ -36,4 +36,4 @@ to your Gemfile.
 
 ## Copyright ##
 
-Copyright (c) 2010 Thorsten Böttger. See LICENSE for details.
+Copyright (c) 2010 [Thorsten Böttger](http://mt7.de). See LICENSE for details.
