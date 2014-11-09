@@ -5,53 +5,44 @@
 
 Gem::Specification.new do |s|
   s.name = %q{exceptionist}
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["alto"]
   s.date = %q{2010-10-15}
   s.description = %q{Request a certain HTTP status code to be returned}
+  s.summary = %q{Force your Rails (version >= 3) application to crash}
   s.email = %q{boettger@mt7.de}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.markdown"
   ]
-  s.files = [
-    ".document",
-     ".gitignore",
-     "LICENSE",
-     "README.markdown",
-     "Rakefile",
-     "VERSION",
-     "app/controllers/exceptionist/fire_controller.rb",
-     "config/routes.rb",
-     "exceptionist.gemspec",
-     "lib/exceptionist.rb",
-     "lib/exceptionist/engine.rb",
-     "test/fire_controller_test.rb",
-     "test/helper.rb"
-  ]
+  s.files         = `git ls-files`.split($\)
+  s.executables   = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.homepage = %q{http://github.com/alto/exceptionist}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Force your Rails 3 application to crash}
-  s.test_files = [
-    "test/fire_controller_test.rb",
-     "test/helper.rb"
-  ]
 
-  if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 3
+  s.add_dependency 'activesupport'
+  s.add_dependency 'actionpack'
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
-    else
-      s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
-  end
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'shoulda'
+  s.add_development_dependency 'turn'
+
+  # if s.respond_to? :specification_version then
+  #   current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
+  #   s.specification_version = 3
+
+  #   if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+  #     s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+  #   else
+  #     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+  #   end
+  # else
+  #   s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+  # end
 end
 
